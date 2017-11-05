@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,14 @@
     <h1>Welcome to [title]!</h1>
     <p>Basically, you enter your crush and junk into the text boxes, press
     submit, and if the object of your affections reciprocates, you will be
-    notified.</p>
+    notified via electronic mail.</p>
+    <p>Also, I'm not responsible for emotional trauma or anything like that that
+    happens because of this. You should know what you're getting into. If
+    you put somebody in before, but you like somebody else now, or you don't
+    really like anybody at the moment, or you figure that it was just a bad
+    idea to do this, just fill the form out again, but say you have a crush
+    on "None Applicable," and, since Ms. Applicable doesn't really exist,
+    problem solved!</p>
     <p>If you want to know more about this, go <a href="about.html">here</a>.
     If you have any questions go to <a href="faq.html"><abbr
     title="Answered Questions">AQ</abbr></a> to make sure that your Questions
@@ -19,7 +26,11 @@
     href="mailto:alangthe1@gmail.com">alangthe1@gmail.com</a> so that I can
     accurately call it an FAQ.</p>
     <form action="program.php" method = "post">
-    	<label>Name: <input></label>
+    	<label>Name: <input name="name" required /></label><br />
+        <label>Email: <input type="email" name="email" required /></label><br />
+        <label>Birthday: <input type="date" name="bday" required /></label><br
+        />
+        <label>Message:</label>
     </form>
   </body>
 </html>
